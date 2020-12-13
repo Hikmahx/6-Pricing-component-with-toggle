@@ -1,1 +1,326 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.toggle-sect {
+  width: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  background: url(../images/bg-top.svg) no-repeat 100vh #f6f6fe;
+  background-position: 19.5rem -4rem;
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 6.6rem auto 4.6rem;
+}
+
+header h1 {
+  color: #62627b;
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 4rem;
+}
+
+header .btn-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+header input[type="checkbox"] {
+  visibility: hidden;
+  display: none;
+}
+
+header .check {
+  position: relative;
+  display: block;
+  width: 5.6rem;
+  height: 3.2rem;
+  margin: 0 2.5rem;
+  cursor: pointer;
+  background: linear-gradient(132deg, #a3a8f0 0%, #696fdd 74%);
+  border-radius: 25px;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .check::before {
+  content: "";
+  position: absolute;
+  width: 2.4rem;
+  height: 2.4rem;
+  background: white;
+  margin: 0.5rem;
+  border-radius: 50%;
+  left: 0;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
+}
+
+header input[type="checkbox"]:checked ~ .check::before {
+  left: 2.3rem;
+}
+
+header p {
+  color: #b3b5c6;
+  font-weight: 700;
+}
+
+main {
+  width: 100%;
+  margin: 4rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.cards {
+  width: 87%;
+  max-width: 37rem;
+}
+
+.card.white {
+  width: auto;
+  height: 44rem;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+  color: #75778e;
+  background: white;
+  padding: 1rem;
+  font-weight: 700;
+  -webkit-box-shadow: -0.2rem 0.5rem 2rem 0rem rgba(152, 166, 189, 0.3);
+          box-shadow: -0.2rem 0.5rem 2rem 0rem rgba(152, 166, 189, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.card.white h1 {
+  font-size: 7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-bottom: 3rem;
+  border-bottom: 0.1rem solid rgba(189, 189, 189, 0.5);
+  width: inherit;
+}
+
+.card.white h3 {
+  margin-bottom: 2.5rem;
+}
+
+.card.white p {
+  padding: 1.6rem 0;
+  border-bottom: 0.1rem solid rgba(189, 189, 189, 0.5);
+  width: inherit;
+  text-align: center;
+}
+
+.card.white span {
+  font-size: 4rem;
+}
+
+.card.white .submit-btn {
+  margin: 3rem 1rem 1rem 1rem;
+  border: none;
+  width: inherit;
+  height: 4.2rem;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 0.5rem;
+  background: linear-gradient(132deg, #a3a8f0 0%, #696fdd 74%);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.card.white h1 {
+  color: #565865;
+}
+
+.card.white .submit-btn {
+  color: white;
+}
+
+.card.blue {
+  width: auto;
+  height: 44rem;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+  color: white;
+  background: linear-gradient(167deg, #a3a8f0 0%, #696fdd 74%);
+  padding: 1rem;
+  font-weight: 700;
+  -webkit-box-shadow: -0.2rem 0.5rem 2rem 0rem rgba(152, 166, 189, 0.3);
+          box-shadow: -0.2rem 0.5rem 2rem 0rem rgba(152, 166, 189, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.card.blue h1 {
+  font-size: 7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-bottom: 3rem;
+  border-bottom: 0.1rem solid rgba(255, 255, 255, 0.3);
+  width: inherit;
+}
+
+.card.blue h3 {
+  margin-bottom: 2.5rem;
+}
+
+.card.blue p {
+  padding: 1.6rem 0;
+  border-bottom: 0.1rem solid rgba(255, 255, 255, 0.3);
+  width: inherit;
+  text-align: center;
+}
+
+.card.blue span {
+  font-size: 4rem;
+}
+
+.card.blue .submit-btn {
+  margin: 3rem 1rem 1rem 1rem;
+  border: none;
+  width: inherit;
+  height: 4.2rem;
+  font-family: "Montserrat", sans-serif;
+  border-radius: 0.5rem;
+  background: white;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.card.blue .submit-btn {
+  color: #696fdd;
+}
+
+.card-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 2rem auto;
+  width: 94%;
+}
+/*# sourceMappingURL=style.css.map */

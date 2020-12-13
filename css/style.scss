@@ -1,0 +1,193 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+}
+
+@mixin flexCenter($direction) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: $direction;
+}
+
+.toggle-sect {
+  width: 100%;
+  height: max-content;
+  background: url(../images/bg-top.svg) no-repeat 100vh #f6f6fe;
+  background-position: 19.5rem -4rem;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+header {
+  width: 80%;
+  @include flexCenter(column);
+  margin: 6.6rem auto 4.6rem;
+
+  h1 {
+    color: #62627b;
+    font-weight: 700;
+    font-size: 3rem;
+    margin-bottom: 4rem;
+  }
+
+  .btn-wrapper {
+    @include flexCenter(row);
+  }
+
+  input[type="checkbox"] {
+    visibility: hidden;
+    display: none;
+  }
+
+  .check {
+    position: relative;
+    display: block;
+    width: 5.6rem;
+    height: 3.2rem;
+    margin: 0 2.5rem;
+    cursor: pointer;
+    background: linear-gradient(
+      132deg,
+      hsl(236, 72%, 79%) 0%,
+      hsl(237, 63%, 64%) 74%
+    );
+    border-radius: 25px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+  }
+
+  .check::before {
+    content: "";
+    position: absolute;
+    width: 2.4rem;
+    height: 2.4rem;
+    background: white;
+    margin: 0.5rem;
+    border-radius: 50%;
+    left: 0;
+    transition: 0.3s ease-in;
+  }
+
+  input[type="checkbox"]:checked ~ .check::before {
+    left: 2.3rem;
+  }
+
+  p {
+    color: hsl(234, 14%, 74%);
+    font-weight: 700;
+  }
+}
+
+main {
+  width: 100%;
+  margin: 4rem auto;
+  @include flexCenter(column);
+}
+
+@mixin cardContainer($bg, $fontColor, $btn, $btnColor) {
+  // width: 33rem;
+  width: auto;
+  height: 44rem;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+  color: $fontColor;
+  background: $bg;
+  padding: 1rem;
+  font-weight: 700;
+  box-shadow: -0.2rem 0.5rem 2rem 0rem rgba(152, 166, 189, 0.3);
+
+  h1 {
+    // color:  #494c5f;
+    font-size: 7rem;
+    @include flexCenter(row);
+    padding-bottom: 3rem;
+    border-bottom: 0.1rem solid $btnColor;
+    width: inherit;
+  }
+
+  h3 {
+    margin-bottom: 2.5rem;
+  }
+
+  p {
+    padding: 1.6rem 0;
+    border-bottom: 0.1rem solid $btnColor;
+    width: inherit;
+    text-align: center;
+  }
+
+  span {
+    font-size: 4rem;
+  }
+
+  .submit-btn {
+    margin: 3rem 1rem 1rem 1rem;
+    border: none;
+    width: inherit;
+    height: 4.2rem;
+    font-family: "Montserrat", sans-serif;
+    border-radius: 0.5rem;
+    background: $btn;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+}
+
+.cards {
+  width: 87%;
+  max-width: 37rem;
+}
+
+.card.white {
+  @include cardContainer(
+    white,
+    #75778e,
+    linear-gradient(132deg, #a3a8f0 0%, #696fdd 74%),
+    rgba(189, 189, 189, 0.5)
+  );
+  @include flexCenter(column);
+  justify-content: end;
+
+  h1 {
+    color: #565865;
+  }
+
+  .submit-btn {
+    color: white;
+  }
+}
+
+.card.blue {
+  @include cardContainer(
+    linear-gradient(167deg, hsl(236, 72%, 79%) 0%, hsl(237, 63%, 64%) 74%),
+    white,
+    white,
+    rgba(255, 255, 255, 0.3)
+  );
+  @include flexCenter(column);
+  justify-content: end;
+
+  .submit-btn {
+    color: #696fdd;
+  }
+}
+
+.card-info {
+  @include flexCenter(column);
+  margin: 2rem auto;
+  width: 94%;
+  // width: 28rem;
+}
