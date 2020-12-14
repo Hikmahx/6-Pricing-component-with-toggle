@@ -366,7 +366,7 @@ main {
   .toggle-sect {
     background: no-repeat url(../images/bg-top.svg), no-repeat url(../images/bg-bottom.svg), #f6f6fe;
     background-position: right top, left bottom;
-    height: 130vh;
+    padding-bottom: 3.9rem;
   }
   header {
     margin: 7.4rem auto 5.6rem;
