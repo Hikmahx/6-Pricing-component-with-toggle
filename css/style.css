@@ -224,6 +224,8 @@ main {
   text-transform: uppercase;
   font-weight: 700;
   cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .card.white .submit-btn:hover, .card.white .submit-btn:focus {
@@ -323,6 +325,8 @@ main {
   text-transform: uppercase;
   font-weight: 700;
   cursor: pointer;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 .card.blue .submit-btn:hover, .card.blue .submit-btn:focus {
