@@ -67,6 +67,10 @@ header {
     overflow: hidden;
     display: flex;
     align-items: center;
+
+    &:hover{
+      opacity: 0.8;
+    }
   }
 
   .check::before {
@@ -108,7 +112,7 @@ main {
   padding: 1rem;
   font-weight: 700;
   box-shadow: -0.2rem 1.5rem 3rem 1rem rgba(113, 119, 224, 0.1);
-  
+
   h1 {
     // color:  #494c5f;
     font-size: 7.2rem;
@@ -146,6 +150,13 @@ main {
     background: $btn;
     text-transform: uppercase;
     font-weight: 700;
+    cursor: pointer;
+
+    &:hover, &:focus{
+      background: $bg;
+      color: $fontColor;
+      border: 0.1rem solid $fontColor;
+    }
   }
 }
 
@@ -170,6 +181,11 @@ main {
 
   .submit-btn {
     color: white;
+
+    &:hover, &:focus{
+      color: #696fdd;
+      border: 0.1rem solid #696fdd;
+    }
   }
 }
 
@@ -185,6 +201,10 @@ main {
 
   .submit-btn {
     color: #696fdd;
+    
+    &:hover, &:focus{
+      background: #777de2;
+    }
   }
 }
 

@@ -97,6 +97,10 @@ header .check {
           align-items: center;
 }
 
+header .check:hover {
+  opacity: 0.8;
+}
+
 header .check::before {
   content: "";
   position: absolute;
@@ -219,6 +223,13 @@ main {
   background: linear-gradient(132deg, #a3a8f0 0%, #696fdd);
   text-transform: uppercase;
   font-weight: 700;
+  cursor: pointer;
+}
+
+.card.white .submit-btn:hover, .card.white .submit-btn:focus {
+  background: white;
+  color: #75778e;
+  border: 0.1rem solid #75778e;
 }
 
 .card.white h1 {
@@ -227,6 +238,11 @@ main {
 
 .card.white .submit-btn {
   color: white;
+}
+
+.card.white .submit-btn:hover, .card.white .submit-btn:focus {
+  color: #696fdd;
+  border: 0.1rem solid #696fdd;
 }
 
 .card.blue {
@@ -306,10 +322,21 @@ main {
   background: white;
   text-transform: uppercase;
   font-weight: 700;
+  cursor: pointer;
+}
+
+.card.blue .submit-btn:hover, .card.blue .submit-btn:focus {
+  background: linear-gradient(135deg, #a3a8f0 0%, #696fdd);
+  color: white;
+  border: 0.1rem solid white;
 }
 
 .card.blue .submit-btn {
   color: #696fdd;
+}
+
+.card.blue .submit-btn:hover, .card.blue .submit-btn:focus {
+  background: #777de2;
 }
 
 .card-info {
