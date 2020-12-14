@@ -360,4 +360,50 @@ main {
   margin: 2.4rem auto;
   width: 94%;
 }
+
+/*TABLET AND DESKTOP*/
+@media (min-width: 1023px) {
+  .toggle-sect {
+    background: no-repeat url(../images/bg-top.svg), no-repeat url(../images/bg-bottom.svg), #f6f6fe;
+    background-position: right top, left bottom;
+    height: 130vh;
+  }
+  header {
+    margin: 7.4rem auto 5.6rem;
+  }
+  main {
+    margin: 2.2rem auto 4.2rem auto;
+  }
+  .cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    max-width: -webkit-fit-content;
+    max-width: -moz-fit-content;
+    max-width: fit-content;
+  }
+  .card.white {
+    width: 34.5rem;
+    height: 47.6rem;
+    padding-top: 1.5rem;
+  }
+  .card.white .submit-btn {
+    margin: 4.4rem 1rem 1rem 1rem;
+  }
+  .card.blue {
+    width: 34.5rem;
+    height: 52.6rem;
+    padding-top: 4.5rem;
+  }
+  .card.blue .card-info {
+    margin: 2rem;
+  }
+  .card.blue .submit-btn {
+    margin: 4.4rem 1rem 1rem 1rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */

@@ -215,3 +215,62 @@ main {
   width: 94%;
   // width: 28rem;
 }
+
+
+/*TABLET AND DESKTOP*/
+@media(min-width:1023px){
+  .toggle-sect{
+    background: no-repeat url(../images/bg-top.svg),no-repeat url(../images/bg-bottom.svg), #f6f6fe;
+    background-position: right top, left bottom;
+    height: 130vh;
+  }
+
+  header{
+    margin: 7.4rem auto 5.6rem;
+  }
+
+  main{
+    margin: 2.2rem auto 4.2rem auto;
+  }
+
+  .cards{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: fit-content;
+  }
+
+  $cardWidth: 34.5rem;
+  $cardHeight:47.6rem;
+  $top : 1.5rem;
+
+  .card.white{
+      // width: 33rem;
+      width: $cardWidth;
+      height: $cardHeight;
+      padding-top: $top;
+
+      .submit-btn{
+        margin: 4.4rem 1rem 1rem 1rem;
+      }
+    }
+
+  .card.blue{
+    // width: 34rem;
+    // transform: scale(1.1);
+    // transform: scaleY(1.05);
+    width: $cardWidth;
+    height: $cardHeight +5rem;
+    padding-top:$top + 3rem;
+    
+
+    .card-info{
+      margin: 2rem;
+    }
+
+    .submit-btn{
+      margin: 4.4rem 1rem 1rem 1rem;
+    }
+  }
+
+}
