@@ -109,13 +109,13 @@ header .check::before {
   background: white;
   margin: 0.5rem;
   border-radius: 50%;
-  left: 0;
+  left: 2.3rem;
   -webkit-transition: 0.3s ease-in;
   transition: 0.3s ease-in;
 }
 
 header input[type="checkbox"]:checked ~ .check::before {
-  left: 2.3rem;
+  left: 0;
 }
 
 header p {
@@ -340,7 +340,7 @@ main {
 }
 
 .card.blue .submit-btn:hover, .card.blue .submit-btn:focus {
-  background: #777de2;
+  background: transparent;
 }
 
 .card-info {
@@ -366,7 +366,7 @@ main {
   .toggle-sect {
     background: no-repeat url(../images/bg-top.svg), no-repeat url(../images/bg-bottom.svg), #f6f6fe;
     background-position: right top, left bottom;
-    padding-bottom: 3.9rem;
+    padding-bottom: 2.8%;
   }
   header {
     margin: 7.4rem auto 5.6rem;
@@ -386,13 +386,19 @@ main {
     max-width: -moz-fit-content;
     max-width: fit-content;
   }
+  .cards .card h1 {
+    padding-bottom: 4rem;
+  }
+  .cards .card p {
+    padding: 1.8rem 0;
+  }
   .card.white {
     width: 34.5rem;
     height: 47.6rem;
     padding-top: 1.5rem;
   }
   .card.white .submit-btn {
-    margin: 4.4rem 1rem 1rem 1rem;
+    margin: 3.6rem 1rem 1rem 1rem;
   }
   .card.blue {
     width: 34.5rem;
@@ -403,7 +409,7 @@ main {
     margin: 2rem;
   }
   .card.blue .submit-btn {
-    margin: 4.4rem 1rem 1rem 1rem;
+    margin: 3.6rem 1rem 1rem 1rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

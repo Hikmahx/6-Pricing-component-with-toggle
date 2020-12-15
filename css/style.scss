@@ -81,12 +81,12 @@ header {
     background: white;
     margin: 0.5rem;
     border-radius: 50%;
-    left: 0;
+    left: 2.3rem;
     transition: 0.3s ease-in;
   }
 
   input[type="checkbox"]:checked ~ .check::before {
-    left: 2.3rem;
+    left: 0;
   }
 
   p {
@@ -204,7 +204,7 @@ main {
     color: #696fdd;
     
     &:hover, &:focus{
-      background: #777de2;
+      background: transparent;
     }
   }
 }
@@ -223,7 +223,8 @@ main {
     background: no-repeat url(../images/bg-top.svg),no-repeat url(../images/bg-bottom.svg), #f6f6fe;
     background-position: right top, left bottom;
     // height: max-content;
-    padding-bottom: 3.9rem;
+    // padding-bottom: 3.9rem;
+    padding-bottom: 2.8%;
   }
 
   header{
@@ -239,6 +240,17 @@ main {
     align-items: center;
     width: 100%;
     max-width: fit-content;
+
+    .card{
+      h1{
+       padding-bottom:4rem;
+      }
+
+     p{
+       padding: 1.8rem 0;
+     }
+
+    }
   }
 
   $cardWidth: 34.5rem;
@@ -252,7 +264,7 @@ main {
       padding-top: $top;
 
       .submit-btn{
-        margin: 4.4rem 1rem 1rem 1rem;
+        margin: 3.6rem 1rem 1rem 1rem;
       }
     }
 
@@ -270,7 +282,7 @@ main {
     }
 
     .submit-btn{
-      margin: 4.4rem 1rem 1rem 1rem;
+      margin: 3.6rem 1rem 1rem 1rem;
     }
   }
 
