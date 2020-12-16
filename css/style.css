@@ -81,7 +81,6 @@ header input[type="checkbox"] {
 
 header .check {
   position: relative;
-  display: block;
   width: 5.6rem;
   height: 3.2rem;
   margin: 0 2.5rem;
@@ -107,8 +106,9 @@ header .check::before {
   width: 2.4rem;
   height: 2.4rem;
   background: white;
-  margin: 0.5rem;
+  margin: 0 0.5rem;
   border-radius: 50%;
+  top: 12%;
   left: 2.3rem;
   -webkit-transition: 0.3s ease-in;
   transition: 0.3s ease-in;
